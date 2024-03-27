@@ -8,6 +8,8 @@
   昆山杜克大学飞跃手册
 </p>
 
+本手册网页模板参考了<a href="https://github.com/SUSTech-Application/SUSTechapplication">南方科技大学飞跃手册</a>，感谢南科大同学的付出!
+
 <p align="center">
   <a href="https://www.npmjs.com/package/docsify"><img alt="npm" src="https://img.shields.io/npm/v/docsify.svg"></a>
 </p>
