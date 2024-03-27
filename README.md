@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://sustech-application.github.io/Application-Book">
+  <a href="https://survivedku.github.io/DKUApplication/">
     <img alt="docsify" src="./docs/src/_media/DKU_Logo_clean.png" height="150">
   </a>
 </p>
