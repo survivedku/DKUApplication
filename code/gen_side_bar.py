@@ -2,8 +2,10 @@ import os
 import glob
 
 def count_md_files(folder):
-    md_files = glob.glob(os.path.join(folder, "*.md"))
-    return len(md_files) - 1  # Subtract 1 to exclude README.md
+    md_files = glob.glob(os.path.join(folder, "**", "*.md"), recursive=True)
+    # if include readme.md, remove it
+    md_files = [f for f in md_files if not f.endswith("README.md")]
+    return len(md_files)
 
 def generate_sidebar():
     sidebar = ""
@@ -19,15 +21,39 @@ def generate_sidebar():
         md_count = count_md_files(folder)
         section_count += md_count
 
-        if not os.path.exists(readme_path):
-            with open(readme_path, "w", encoding="utf-8") as file:
-                file.write(f"## {title}\n\n")
-                file.write("#### PhD Programs:\n\n")
-                file.write("To be continued.\n\n")
-                file.write("#### Master Programs:\n\n")
-                file.write("To be continued.\n\n")
-                file.write("##### 就业：\n\n")
-                file.write("To be continued.\n\n")
+        # Create phd, master, and career folders if they don't exist
+        phd_folder = os.path.join(folder, "phd")
+        master_folder = os.path.join(folder, "master")
+        career_folder = os.path.join(folder, "career")
+        os.makedirs(phd_folder, exist_ok=True)
+        os.makedirs(master_folder, exist_ok=True)
+        os.makedirs(career_folder, exist_ok=True)
+
+        # Count the number of .md files in each folder
+        phd_count = count_md_files(phd_folder)
+        master_count = count_md_files(master_folder)
+        career_count = count_md_files(career_folder)
+
+        with open(readme_path, "w", encoding="utf-8") as file:
+            file.write(f"## {title}\n\n")
+            file.write(f"#### PhD Programs: ({phd_count})\n\n")
+            for md_file in glob.glob(os.path.join(phd_folder, "*.md")):
+                file_name = os.path.basename(md_file)
+                sub_title = " ".join(word.capitalize() for word in file_name.replace(".md", "").split("-"))
+                file.write(f"* [{sub_title}](phd/{file_name})\n")
+            file.write("\n")
+            file.write(f"#### Master Programs: ({master_count})\n\n")
+            for md_file in glob.glob(os.path.join(master_folder, "*.md")):
+                file_name = os.path.basename(md_file)
+                sub_title = " ".join(word.capitalize() for word in file_name.replace(".md", "").split("-"))
+                file.write(f"* [{sub_title}](master/{file_name})\n")
+            file.write("\n")
+            file.write(f"#### 就业: ({career_count})\n\n")
+            for md_file in glob.glob(os.path.join(career_folder, "*.md")):
+                file_name = os.path.basename(md_file)
+                sub_title = " ".join(word.capitalize() for word in file_name.replace(".md", "").split("-"))
+                file.write(f"* [{sub_title}](career/{file_name})\n")
+            file.write("\n")
 
         if title == "Us Studies":
             title = "US Studies"

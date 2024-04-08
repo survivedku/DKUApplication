@@ -1,14 +1,12 @@
 ## Data Science
 
-#### PhD Programs:
+#### PhD Programs: (1)
 
-To be continued.
+* [2024 Max](phd/2024-max.md)
 
-#### Master Programs:
+#### Master Programs: (0)
 
-To be continued.
 
-##### 就业：
+#### 就业: (0)
 
-To be continued.
 
