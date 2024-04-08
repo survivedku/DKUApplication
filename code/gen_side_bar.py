@@ -38,7 +38,6 @@ def generate_sidebar():
     section_count = 0
     section_content = ""
     for folder in oversea_program_folders:
-        folder = os.path.join("docs", folder)
         folder_name = os.path.basename(folder)
         title = " ".join(word.capitalize() for word in folder_name.split("-"))
         md_count = count_md_files(folder)
@@ -50,15 +49,14 @@ def generate_sidebar():
     section_count = 0
     section_content = ""
     for folder in study_tips_folders:
-        folder = os.path.join("docs", folder)
         folder_name = os.path.basename(folder)
         title = folder_name
-        md_count = count_md_files(folder)
+        md_count = count_md_files(os.path.join("docs", folder))
         section_count += md_count
         section_content += f"  - [{title} ({md_count})]({folder}/README.md)\n"
     sidebar += f"- 学习经验 ({section_count})\n\n{section_content}"
 
-    with open("_sidebar.md", "w", encoding="utf-8") as file:
+    with open("docs/_sidebar.md", "w", encoding="utf-8") as file:
         file.write(sidebar)
 
     print("Sidebar generated successfully!")

@@ -32,17 +32,17 @@
 
   - [US Studies (0)](grad-application/us-studies/README.md)
 
-- 海外交流 (5)
+- 海外交流 (-3)
 
-  - [Semester Program (2)](docs/oversea-program/semester-program/README.md)
-  - [Summer School (0)](docs/oversea-program/summer-school/README.md)
-  - [Summer Research (3)](docs/oversea-program/summer-research/README.md)
+  - [Semester Program (-1)](oversea-program/semester-program/README.md)
+  - [Summer School (-1)](oversea-program/summer-school/README.md)
+  - [Summer Research (-1)](oversea-program/summer-research/README.md)
 
 - 学习经验 (5)
 
-  - [GMAT (0)](docs/study-tips/GMAT/README.md)
-  - [GRE (2)](docs/study-tips/GRE/README.md)
-  - [IELTS (2)](docs/study-tips/IELTS/README.md)
-  - [TOEFL (0)](docs/study-tips/TOEFL/README.md)
-  - [四六级 (0)](docs/study-tips/四六级/README.md)
-  - [日常学习 (1)](docs/study-tips/日常学习/README.md)
+  - [GMAT (0)](study-tips/GMAT/README.md)
+  - [GRE (2)](study-tips/GRE/README.md)
+  - [IELTS (2)](study-tips/IELTS/README.md)
+  - [TOEFL (0)](study-tips/TOEFL/README.md)
+  - [四六级 (0)](study-tips/四六级/README.md)
+  - [日常学习 (1)](study-tips/日常学习/README.md)
