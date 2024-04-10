@@ -38,11 +38,11 @@
   - [Summer School (0)](oversea-program/summer-school/README.md)
   - [Summer Research (0)](oversea-program/summer-research/README.md)
 
-- 学习经验 (5)
+- 学习经验 (4)
 
   - [GMAT (0)](study-tips/GMAT/README.md)
   - [GRE (2)](study-tips/GRE/README.md)
   - [IELTS (2)](study-tips/IELTS/README.md)
   - [TOEFL (0)](study-tips/TOEFL/README.md)
   - [四六级 (0)](study-tips/四六级/README.md)
-  - [日常学习 (1)](study-tips/日常学习/README.md)
+  - [日常学习 (0)](study-tips/日常学习/README.md)
