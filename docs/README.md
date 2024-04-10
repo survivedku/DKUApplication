@@ -15,7 +15,7 @@
 飞跃手册欢迎**所有的毕业生**分享你们的故事，不限出路、不限水平。
 
 1. 对于熟悉Git操作的同学：请对[`docs`](https://github.com/survivedku/DKUApplication/tree/main/docs)路径下的对应文件夹Pull Request，可参考 [**《如何进行经验分享》**](如何进行经验分享)，Merge后便即时上线。
-2. 对于没有Git使用背景的大部分同学：填写[DKU飞跃手册信息收集问卷](DKU飞跃手册信息收集问卷)，我们会帮助你上架。
+2. 对于没有Git使用背景的大部分同学：填写[2024DKU飞跃手册信息收集问卷](https://www.wjx.cn/vm/r7sJ3r0.aspx#)，我们会帮助你上架。
 
 3. 如需更新内容，或者有其他问题，请[联系我们](mailto:survivedku@duke.edu)。
 
