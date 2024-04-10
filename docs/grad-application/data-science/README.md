@@ -2,7 +2,7 @@
 
 #### PhD Programs: (1)
 
-* [2024 Max](phd/2024-max.md)
+* [2024 Max](grad-application/data-science/phd/2024-max.md)
 
 #### Master Programs: (0)
 

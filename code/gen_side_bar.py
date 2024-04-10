@@ -40,19 +40,19 @@ def generate_sidebar():
             for md_file in glob.glob(os.path.join(phd_folder, "*.md")):
                 file_name = os.path.basename(md_file)
                 sub_title = " ".join(word.capitalize() for word in file_name.replace(".md", "").split("-"))
-                file.write(f"* [{sub_title}](phd/{file_name})\n")
+                file.write(f"* [{sub_title}]({md_file.replace('docs/', '')})\n")
             file.write("\n")
             file.write(f"#### Master Programs: ({master_count})\n\n")
             for md_file in glob.glob(os.path.join(master_folder, "*.md")):
                 file_name = os.path.basename(md_file)
                 sub_title = " ".join(word.capitalize() for word in file_name.replace(".md", "").split("-"))
-                file.write(f"* [{sub_title}](master/{file_name})\n")
+                file.write(f"* [{sub_title}]({md_file.replace('docs/', '')})\n")
             file.write("\n")
             file.write(f"#### 就业: ({career_count})\n\n")
             for md_file in glob.glob(os.path.join(career_folder, "*.md")):
                 file_name = os.path.basename(md_file)
                 sub_title = " ".join(word.capitalize() for word in file_name.replace(".md", "").split("-"))
-                file.write(f"* [{sub_title}](career/{file_name})\n")
+                file.write(f"* [{sub_title}]({md_file.replace('docs/', '')})\n")
             file.write("\n")
 
         if title == "Us Studies":
